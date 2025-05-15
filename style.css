@@ -105,11 +105,16 @@ a {
 }
 @media (max-width: 460px) {
   .section-2 {
-    padding-top: 5em;
+    padding-top: 6em;
+    gap: 7em;
   }
   .description h2 {
-    font-size: 2em;
-  }
+    font-size: 1.5em;
+  }  .description p {
+    font-size: 0.8em;
+  }.content {
+    padding: 2em 3em;
+}
   .content img {
     width: 22em;
   }
