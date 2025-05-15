@@ -35,7 +35,7 @@ main::after {
   height: 100%;
   position: absolute;
   background-color: #c8cac7;
-opacity: 0.8;
+  opacity: 0.8;
   z-index: -1;
   clip-path: circle(35% at right 70%);
 }
@@ -61,10 +61,12 @@ a {
   align-items: center;
   padding-top: 12em;
   justify-content: space-between;
-  gap: 11em;
 }
 .content img {
   width: 28em;
+}
+.description {
+  max-width: 500px;
 }
 .description h2 {
   text-transform: uppercase;
@@ -75,25 +77,20 @@ a {
 .description p {
   font-size: 1.1em;
   font-weight: 700;
-  max-width: 700px;
 }
 @media (min-width: 1000px) and (max-width: 1300px) {
-  .section-2 {
-    gap: 6em;
-  }
   .content {
     padding: 2em 6em;
   }
 }
-@media (min-width: 731px) and (max-width: 1140px) {
+@media  (max-width: 1140px) {
   .section-2 {
     flex-direction: column;
-    gap: 4em;
   }
   main::after {
     clip-path: circle(45% at bottom);
-  }}
-
+  }
+}
 @media (max-width: 730px) {
   .title {
     align-items: center;
@@ -104,16 +101,11 @@ a {
   }
   .section-2 {
     padding-top: 8em;
-    gap: 2em;
-   flex-direction: column;
-  }  main::after {
-    clip-path: circle(45% at bottom);
   }
 }
 @media (max-width: 460px) {
   .section-2 {
     padding-top: 5em;
-    gap: 5em;
   }
   .description h2 {
     font-size: 2em;
@@ -122,3 +114,4 @@ a {
     width: 22em;
   }
 }
+
